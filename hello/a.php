@@ -9,4 +9,4 @@
 // sessionထဲက dataတွေကို session ID နဲ့cookieမှာautoသိမ်းပေးတယ်
 
 session_start();
-$_SESSION['user'] = 'Hnin Mon Thant';
+$_SESSION['user'] = 'Htein Lynn Aung';
