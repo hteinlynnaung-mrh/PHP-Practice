@@ -7,12 +7,14 @@ $arr = [123, 'abc', true, [1,2]];
 // print_rနဲ့လည်းရိုက်ထုတ်လို့ရတယ် but var_dump လောက်အသေးစိတ်မမြင်ရပေမယ့် မျက်စိနဲနဲပိုရှင်းတယ်
 
 var_dump($arr);
-
 echo "<br>"; // Browserကိုတစ်လိုင်းဆင်းရန်
+print_r($arr);
+echo "<br>"; 
 
 // another array of php
-$user =["name" => "Hnin Mon Thant", "age" => 20]; // associative array of php
-// In javascript we write as: let user = {name: 'Hnin Mon Thant', age: 20};
+// let user = {name: 'Alice', age: 22};  In JS
+$user =["name" => "Jian Cheng Ze", "age" => 26]; // associative array of php
+// use the double quote for index of the array "name" "age"
 print_r($user);
 
 

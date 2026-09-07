@@ -1,7 +1,8 @@
 <?php
 
-$name = "Hnin Mon Thant";
+$name = "Nishigami Mei";
 
-echo "I Love You $name"; // phpမှာ String တွေကို +နဲ့တွဲလို့မရဘူး .နဲ့တွဲရတယ် or .မပါပဲတွဲလည်းရတယ်
+echo "I Love You $name"; 
+/* In php,we can't attach the string with + ,so attach with . (or) without . is also ok */
 
 

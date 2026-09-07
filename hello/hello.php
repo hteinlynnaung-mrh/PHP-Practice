@@ -11,14 +11,15 @@
 </head>
 <body>
     <h1>Hello PHP</h1>
-    <?php if($mode == "dark") : ?>
+    <?php if($mode == "dark") : ?> <!-- alternate writing way for php and html-->
         <div style="padding: 20px; background: #222; color: white">
             Lorem ipsum dolor sit amet.
         </div>
-    <?php else : ?>
+    <?php else : ?> <!-- no need to use { } use : -->
         <div style="padding: 20px; background: #ddd; color: black">
             Lorem ipsum dolor sit amet.
         </div>
-    <?php endif ?>
+    <?php endif ?>  <!-- no need to put ; for only one line -->
+
 </body>
 </html>
