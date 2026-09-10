@@ -6,8 +6,8 @@
     <title>Form</title>
 </head>
 <body>
-    <h1>Form</h1>
-    <form action="app.php"> <!-- default method is 'get' -->
+    <h1>Form</h1> <!-- form data တွေကိုphpကsupergolbalအနေနဲ့လက်ခံအလုပ်လုပ်တယ် -->
+    <form action="app.php" method="post"> <!-- default method is 'get' -->
         <input type="text" name="name" placeholder="Name"> <br>
         <input type="text" name="age" placeholder="Age"> <br></br>
         <button>Button</button>

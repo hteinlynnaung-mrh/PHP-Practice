@@ -1,9 +1,7 @@
 <?php
 // cookieထဲမှာ dataသိမ်းနည်း
 
-// setcookie("mode", "dark");
-
-
+setcookie("mode", "dark");
 
 // sessionထဲမှာ dataသိမ်းနည်း
 // sessionထဲက dataတွေကို session ID နဲ့cookieမှာautoသိမ်းပေးတယ်

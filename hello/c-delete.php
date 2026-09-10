@@ -1,8 +1,7 @@
 <?php
 // cookieထဲက dataဖျက်နည်း
 
-// setcookie("mode", "", time() - 1);
-
+setcookie("mode", "", time() - 1);
 
 
 // sessionထဲက dataဖျက်နည်း
