@@ -1,13 +1,15 @@
+<!-- The method of calling function from othe file -->
+
 <?php
 
-include("addfun.php");
-include("lib.php");
-
-Addfun\add(1, 2);
+include("AddFunction.php");
+include("LibraryFunction.php");
 
 echo "<br>";
+AddFunction\add(1, 2);
 
-Lib\add(1, 2, 3);
+echo "<br>";
+LibraryFunction\add(1, 2, 3);
 
 
 /* require("addfun.php");

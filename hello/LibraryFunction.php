@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib;
+namespace LibraryFunction;
 
 function add($a, $b, $c) {
     echo $a + $b + $c;
