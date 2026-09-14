@@ -1,6 +1,6 @@
 <?php 
 
-namespace Helpers;
+namespace Helpers; // composer require fakerphp/faker
 
 class Auth
 {

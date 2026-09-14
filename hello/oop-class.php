@@ -36,7 +36,7 @@ Dog::info(); // static functionဆိုရင် objectကနေခေါ်စ
 echo "<br>";
 
 $dog = new Dog("Bobby");
-echo $dog->hello();
+$dog->hello();
 echo "<br>";
 
 $dog->run();
