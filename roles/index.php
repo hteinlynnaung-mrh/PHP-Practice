@@ -1,9 +1,9 @@
 <?php
 
     $db = new PDO('mysql:dbhost=localhost;dbname=project', 'root', '');
-    $result = $db->query("SELECT * FROM roles");
+    $result = $db->query("SELECT * FROM roles"); // Select query result
 
-    $roles = $result->fetchAll();
+    $roles = $result->fetchAll(); // rolesထဲကdataကို fetchAllနဲ့ထုတ်ယူ
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,11 +15,13 @@
 <body>
     <h1>List</h1>
     <ul>
-        <?php foreach($roles as $role): ?>
+        <?php foreach($roles as $role): ?> <!-- foreachနဲ့dataကိုloopလုပ်တယ် -->
             <li>
                 <a href="del.php?id=<?= $role['id'] ?>">Del</a>
+                <!-- Delနှိပ်ရင် del.phpကိုသွားမယ် urlမှာ?နဲ့ url-valueတွေတွဲပေးလို့ရတယ် အဲ့ကိုvalueကိုယူရတယ် del.phpမှာယူထားတယ်-->
                 <a href="edit.php?id=<?= $role['id'] ?>">Edit</a>
-                <?= $role['name'] ?>
+                <?= htmlspecialchars($role['name']) ?> 
+                <!-- nameနဲ့valueကိုရိုက်ထုတ်တယ် ရိုက်ထုတ်ဖို့ output tap ?=သုံးတယ်-->
                 (<?= $role['value'] ?>)
             </li>
         <?php endforeach ?>

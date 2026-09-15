@@ -1,6 +1,6 @@
 <?php
 
-$id = $_POST['id'];
+$id = $_POST['id']; // POSTနဲ့databaseကို dataပို့တယ်
 $name = $_POST['name'];
 $value = $_POST['value'];
 
