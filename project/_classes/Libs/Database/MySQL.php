@@ -28,10 +28,10 @@ class MySQL
                 $this->dbpass,
                 [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
-                    // Errorတက်ရင် PDO Exceptionကိုပို့တဲ့ code
+                    // tryမှာ Errorတက်ရင် PDO Exception $e ကိုပို့တဲ့ code
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
                     // Data ထုတ်ယူရင် array မဟုတ်ပဲ Object အနေနဲ့ထုတ်ယူမယ်ဆိုတဲ့ code
-                ]
+                ] 
             );
 
             return $this->db;

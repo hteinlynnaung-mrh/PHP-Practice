@@ -16,10 +16,8 @@ class HTTP
     }
 }
 
-// HTTP::redirect("/profile.php");
-
-// http://localhost/project/profile.php?a=b
+// HTTP::redirect("/profile.php"); // သွားချင်တဲ့pathလမ်းကြောင်းကို redirectနဲ့ခေါ်လို့ရတယ်
+// http://localhost/project/profile.php
 
 // HTTP::redirect("/profile.php", "a=b");
-
 // http://localhost/project/profile.php?a=b

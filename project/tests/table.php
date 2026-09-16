@@ -5,7 +5,7 @@ include("../vendor/autoload.php");
 use Libs\Database\MySQL;
 use Libs\Database\UsersTable;
 
-$table = new UsersTable(new MySQL);
+$table = new UsersTable(new MySQL); // tableဆောက်တဲ့အခါ mysql objectထည့်ပေးရတယ် 
 $id = $table->insert([
     "name" => "Alice",
     "email" => "alice@gmail.com",

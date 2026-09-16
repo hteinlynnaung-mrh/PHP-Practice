@@ -8,7 +8,7 @@ use Helpers\HTTP;
 
 $table = new UsersTable(new MySQL);
 $table->insert([
-    "name" => $_POST['name'],
+    "name" => $_POST['name'], // formကပို့တဲ့ dataကို _POSTနဲ့ယူတယ်
     "email" => $_POST['email'],
     "phone" => $_POST['phone'],
     "address" => $_POST['address'],
