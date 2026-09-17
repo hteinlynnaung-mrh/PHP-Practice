@@ -25,7 +25,8 @@
         <?php endif ?>
 
         <form action="_actions/upload.php" method="post"
-            class="input-group my-2" enctype="multipart/form-data">
+            class="input-group my-2" enctype="multipart/form-data"> 
+            <!-- the attribute enctype is to be sent the photo file to the photos folder -->
             <input type="file" class="form-control" name="photo">
             <button class="btn btn-primary">Upload</button>
         </form>

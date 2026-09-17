@@ -7,7 +7,7 @@ use Libs\Database\UsersTable;
 use Helpers\Auth;
 use Helpers\HTTP;
 
-$auth = Auth::check();
+$auth = Auth::check(); // user loginဝင်ထားမထားစစ်ပေးတယ် loginဝင်ထားရင် user dataပြန်ပေးတယ်
 
 $name = $_FILES['photo']['name'];
 $type = $_FILES['photo']['type'];
