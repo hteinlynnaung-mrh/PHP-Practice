@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
-    <nav class="navbar bg-dark navbar-dark navbar-expand">
+    <nav class="navbar bg-danger navbar-dark navbar-expand">
         <div class="container">
             <a href="#" class="navbar-brand">Admin</a>
 
@@ -109,3 +109,9 @@
     
 </body>
 </html>
+
+<!-- 
+SELECT users.id, users.name, users.role_id, roles.name AS role
+FROM users LEFT JOIN roles
+ON users.role_id = roles.id
+-->

@@ -17,8 +17,10 @@ class UsersTable
     {
         $statement = $this->db->query(
             "SELECT users. * , roles.name AS role
+            /* users tableက columnအားလုံးကို roles tableကnameသည် role columnအနေနဲ့လာjoinမယ် */
             FROM users LEFT JOIN roles 
             ON users.role_id = roles.id"
+            /* users tableက role_idနဲ့ roles tableက idတူတဲ့အခါ */
         );
         return $statement->fetchAll();
     }
