@@ -21,7 +21,9 @@
                 <!-- Delနှိပ်ရင် del.phpကိုသွားမယ် urlမှာ?နဲ့ url-valueတွေတွဲပေးလို့ရတယ် အဲ့ကိုvalueကိုယူရတယ် del.phpမှာယူထားတယ်-->
                 <a href="edit.php?id=<?= $role['id'] ?>">Edit</a>
                 <?= htmlspecialchars($role['name']) ?> 
-                <!-- nameနဲ့valueကိုရိုက်ထုတ်တယ် ရိုက်ထုတ်ဖို့ output tap ?=သုံးတယ်-->
+                <!-- nameနဲ့ valueကိုရိုက်ထုတ်တယ် ရိုက်ထုတ်ဖို့ output tap ?=သုံးတယ်-->
+                <!-- XSS attackကိုကာကွယ်ဖို့ html special characterကိုသုံးတယ် -->
+                <!-- inputမှာရိုက်ထည့်လိုက်တဲ့ <script>ကို uncodeလုပ်ပြီး ရိုးရိုးstringအနေနဲ့ပြောင်းပေးတယ်  -->
                 (<?= $role['value'] ?>)
             </li>
         <?php endforeach ?>
